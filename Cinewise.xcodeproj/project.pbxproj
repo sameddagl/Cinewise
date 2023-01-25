@@ -13,6 +13,10 @@
 		2CB8C86D298127D1008A0090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8C86C298127D1008A0090 /* Assets.xcassets */; };
 		2CB8C870298127D1008A0090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8C86E298127D1008A0090 /* LaunchScreen.storyboard */; };
 		2CB8C88029812A1E008A0090 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C87F29812A1E008A0090 /* APIKeys.swift */; };
+		2CB8C88229813077008A0090 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C88129813077008A0090 /* Constants.swift */; };
+		2CB8C884298131A0008A0090 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C883298131A0008A0090 /* HomeViewController.swift */; };
+		2CB8C886298131AA008A0090 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C885298131A9008A0090 /* SearchViewController.swift */; };
+		2CB8C888298131B5008A0090 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C887298131B5008A0090 /* WatchListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2CB8C86F298127D1008A0090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB8C871298127D1008A0090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB8C87F29812A1E008A0090 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		2CB8C88129813077008A0090 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2CB8C883298131A0008A0090 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2CB8C885298131A9008A0090 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2CB8C887298131B5008A0090 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,9 @@
 		2CB8C878298129DE008A0090 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2CB8C889298131B9008A0090 /* Home */,
+				2CB8C88A298131BC008A0090 /* Search */,
+				2CB8C88B298131BF008A0090 /* Watch List */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -105,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB8C87F29812A1E008A0090 /* APIKeys.swift */,
+				2CB8C88129813077008A0090 /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -121,6 +133,30 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CB8C889298131B9008A0090 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C883298131A0008A0090 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2CB8C88A298131BC008A0090 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C885298131A9008A0090 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2CB8C88B298131BF008A0090 /* Watch List */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C887298131B5008A0090 /* WatchListViewController.swift */,
+			);
+			path = "Watch List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,10 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB8C88229813077008A0090 /* Constants.swift in Sources */,
+				2CB8C886298131AA008A0090 /* SearchViewController.swift in Sources */,
+				2CB8C888298131B5008A0090 /* WatchListViewController.swift in Sources */,
 				2CB8C86B298127CE008A0090 /* Cinewise.xcdatamodeld in Sources */,
 				2CB8C861298127CE008A0090 /* AppDelegate.swift in Sources */,
 				2CB8C88029812A1E008A0090 /* APIKeys.swift in Sources */,
 				2CB8C863298127CE008A0090 /* SceneDelegate.swift in Sources */,
+				2CB8C884298131A0008A0090 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
