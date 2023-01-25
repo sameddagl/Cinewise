@@ -17,6 +17,17 @@
 		2CB8C884298131A0008A0090 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C883298131A0008A0090 /* HomeViewController.swift */; };
 		2CB8C886298131AA008A0090 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C885298131A9008A0090 /* SearchViewController.swift */; };
 		2CB8C888298131B5008A0090 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C887298131B5008A0090 /* WatchListViewController.swift */; };
+		2CB8C8C0298141F2008A0090 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8BF298141F2008A0090 /* HTTPMethod.swift */; };
+		2CB8C8C2298141F8008A0090 /* HTTPEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8C1298141F8008A0090 /* HTTPEndPoint.swift */; };
+		2CB8C8C429814221008A0090 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8C329814221008A0090 /* NetworkError.swift */; };
+		2CB8C8C629814236008A0090 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8C529814236008A0090 /* Service.swift */; };
+		2CB8C8C82981423C008A0090 /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8C72981423C008A0090 /* ServiceHelper.swift */; };
+		2CB8C8CA298142CA008A0090 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8C9298142CA008A0090 /* Paths.swift */; };
+		2CB8C8CD29814418008A0090 /* MovieCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8CC29814418008A0090 /* MovieCategories.swift */; };
+		2CB8C8CF2981442A008A0090 /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8CE2981442A008A0090 /* MovieEndPoint.swift */; };
+		2CB8C8D12981442F008A0090 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8D02981442F008A0090 /* MovieService.swift */; };
+		2CB8C8D329814647008A0090 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8D229814647008A0090 /* Movie.swift */; };
+		2CB8C8D629814896008A0090 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8D529814896008A0090 /* AppContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +43,17 @@
 		2CB8C883298131A0008A0090 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2CB8C885298131A9008A0090 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2CB8C887298131B5008A0090 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
+		2CB8C8BF298141F2008A0090 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2CB8C8C1298141F8008A0090 /* HTTPEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPEndPoint.swift; sourceTree = "<group>"; };
+		2CB8C8C329814221008A0090 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2CB8C8C529814236008A0090 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2CB8C8C72981423C008A0090 /* ServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
+		2CB8C8C9298142CA008A0090 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		2CB8C8CC29814418008A0090 /* MovieCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategories.swift; sourceTree = "<group>"; };
+		2CB8C8CE2981442A008A0090 /* MovieEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
+		2CB8C8D02981442F008A0090 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		2CB8C8D229814647008A0090 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2CB8C8D529814896008A0090 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +86,7 @@
 		2CB8C85F298127CE008A0090 /* Cinewise */ = {
 			isa = PBXGroup;
 			children = (
+				2CB8C8D429814890008A0090 /* App */,
 				2CB8C87D29812A0B008A0090 /* Extensions */,
 				2CB8C87B298129FB008A0090 /* Helper */,
 				2CB8C87C29812A00008A0090 /* Network */,
@@ -108,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB8C869298127CE008A0090 /* Cinewise.xcdatamodeld */,
+				2CB8C8D229814647008A0090 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +148,8 @@
 		2CB8C87C29812A00008A0090 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2CB8C8BB298141CD008A0090 /* Core */,
+				2CB8C8BE298141DF008A0090 /* Services */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -157,6 +183,61 @@
 				2CB8C887298131B5008A0090 /* WatchListViewController.swift */,
 			);
 			path = "Watch List";
+			sourceTree = "<group>";
+		};
+		2CB8C8BB298141CD008A0090 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C8BC298141D3008A0090 /* Settings */,
+				2CB8C8BD298141D6008A0090 /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2CB8C8BC298141D3008A0090 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C8BF298141F2008A0090 /* HTTPMethod.swift */,
+				2CB8C8C1298141F8008A0090 /* HTTPEndPoint.swift */,
+				2CB8C8C9298142CA008A0090 /* Paths.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2CB8C8BD298141D6008A0090 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C8C329814221008A0090 /* NetworkError.swift */,
+				2CB8C8C72981423C008A0090 /* ServiceHelper.swift */,
+				2CB8C8C529814236008A0090 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2CB8C8BE298141DF008A0090 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C8CB298143C6008A0090 /* Movies */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2CB8C8CB298143C6008A0090 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C8CC29814418008A0090 /* MovieCategories.swift */,
+				2CB8C8CE2981442A008A0090 /* MovieEndPoint.swift */,
+				2CB8C8D02981442F008A0090 /* MovieService.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		2CB8C8D429814890008A0090 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C8D529814896008A0090 /* AppContainer.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,14 +310,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB8C8CA298142CA008A0090 /* Paths.swift in Sources */,
 				2CB8C88229813077008A0090 /* Constants.swift in Sources */,
+				2CB8C8D329814647008A0090 /* Movie.swift in Sources */,
 				2CB8C886298131AA008A0090 /* SearchViewController.swift in Sources */,
 				2CB8C888298131B5008A0090 /* WatchListViewController.swift in Sources */,
 				2CB8C86B298127CE008A0090 /* Cinewise.xcdatamodeld in Sources */,
 				2CB8C861298127CE008A0090 /* AppDelegate.swift in Sources */,
+				2CB8C8C629814236008A0090 /* Service.swift in Sources */,
+				2CB8C8C82981423C008A0090 /* ServiceHelper.swift in Sources */,
+				2CB8C8D629814896008A0090 /* AppContainer.swift in Sources */,
+				2CB8C8C0298141F2008A0090 /* HTTPMethod.swift in Sources */,
 				2CB8C88029812A1E008A0090 /* APIKeys.swift in Sources */,
 				2CB8C863298127CE008A0090 /* SceneDelegate.swift in Sources */,
+				2CB8C8C2298141F8008A0090 /* HTTPEndPoint.swift in Sources */,
+				2CB8C8D12981442F008A0090 /* MovieService.swift in Sources */,
+				2CB8C8C429814221008A0090 /* NetworkError.swift in Sources */,
 				2CB8C884298131A0008A0090 /* HomeViewController.swift in Sources */,
+				2CB8C8CD29814418008A0090 /* MovieCategories.swift in Sources */,
+				2CB8C8CF2981442A008A0090 /* MovieEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +468,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49Z33V7QZW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cinewise/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -404,6 +500,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49Z33V7QZW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cinewise/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
