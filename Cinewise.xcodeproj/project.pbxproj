@@ -12,6 +12,7 @@
 		2CB8C86B298127CE008A0090 /* Cinewise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C869298127CE008A0090 /* Cinewise.xcdatamodeld */; };
 		2CB8C86D298127D1008A0090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8C86C298127D1008A0090 /* Assets.xcassets */; };
 		2CB8C870298127D1008A0090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB8C86E298127D1008A0090 /* LaunchScreen.storyboard */; };
+		2CB8C88029812A1E008A0090 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C87F29812A1E008A0090 /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2CB8C86C298127D1008A0090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CB8C86F298127D1008A0090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB8C871298127D1008A0090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB8C87F29812A1E008A0090 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,71 @@
 		2CB8C85F298127CE008A0090 /* Cinewise */ = {
 			isa = PBXGroup;
 			children = (
+				2CB8C87D29812A0B008A0090 /* Extensions */,
+				2CB8C87B298129FB008A0090 /* Helper */,
+				2CB8C87C29812A00008A0090 /* Network */,
+				2CB8C879298129E2008A0090 /* Custom Views */,
+				2CB8C87A298129E8008A0090 /* Model */,
+				2CB8C878298129DE008A0090 /* Screens */,
+				2CB8C877298129D9008A0090 /* Core */,
+				2CB8C871298127D1008A0090 /* Info.plist */,
+			);
+			path = Cinewise;
+			sourceTree = "<group>";
+		};
+		2CB8C877298129D9008A0090 /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				2CB8C860298127CE008A0090 /* AppDelegate.swift */,
 				2CB8C862298127CE008A0090 /* SceneDelegate.swift */,
 				2CB8C86C298127D1008A0090 /* Assets.xcassets */,
 				2CB8C86E298127D1008A0090 /* LaunchScreen.storyboard */,
-				2CB8C871298127D1008A0090 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2CB8C878298129DE008A0090 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2CB8C879298129E2008A0090 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2CB8C87A298129E8008A0090 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				2CB8C869298127CE008A0090 /* Cinewise.xcdatamodeld */,
 			);
-			path = Cinewise;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CB8C87B298129FB008A0090 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2CB8C87F29812A1E008A0090 /* APIKeys.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2CB8C87C29812A00008A0090 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2CB8C87D29812A0B008A0090 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +195,7 @@
 			files = (
 				2CB8C86B298127CE008A0090 /* Cinewise.xcdatamodeld in Sources */,
 				2CB8C861298127CE008A0090 /* AppDelegate.swift in Sources */,
+				2CB8C88029812A1E008A0090 /* APIKeys.swift in Sources */,
 				2CB8C863298127CE008A0090 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
