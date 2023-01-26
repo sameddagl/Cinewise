@@ -19,8 +19,6 @@ final class Service: ServiceProtocol {
         components.host = endPoint.host
         components.path = endPoint.path
         components.queryItems = endPoint.params
-                
-        print(components)
         
         guard let url = components.url else {
             completion(.failure(.badURL))

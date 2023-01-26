@@ -28,6 +28,11 @@
 		2CB8C8D12981442F008A0090 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8D02981442F008A0090 /* MovieService.swift */; };
 		2CB8C8D329814647008A0090 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8D229814647008A0090 /* Movie.swift */; };
 		2CB8C8D629814896008A0090 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8D529814896008A0090 /* AppContainer.swift */; };
+		2CB8C8D929814C8C008A0090 /* HomeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8D829814C8C008A0090 /* HomeContracts.swift */; };
+		2CB8C8DB29814C92008A0090 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8DA29814C92008A0090 /* HomeBuilder.swift */; };
+		2CB8C8DD29814CA6008A0090 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8DC29814CA6008A0090 /* HomeViewModel.swift */; };
+		2CB8C8DF2981607E008A0090 /* HomePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8DE2981607E008A0090 /* HomePresentation.swift */; };
+		2CB8C8E129816A2E008A0090 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8C8E029816A2E008A0090 /* TabBarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,11 @@
 		2CB8C8D02981442F008A0090 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		2CB8C8D229814647008A0090 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2CB8C8D529814896008A0090 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		2CB8C8D829814C8C008A0090 /* HomeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContracts.swift; sourceTree = "<group>"; };
+		2CB8C8DA29814C92008A0090 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		2CB8C8DC29814CA6008A0090 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2CB8C8DE2981607E008A0090 /* HomePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresentation.swift; sourceTree = "<group>"; };
+		2CB8C8E029816A2E008A0090 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,7 @@
 				2CB8C889298131B9008A0090 /* Home */,
 				2CB8C88A298131BC008A0090 /* Search */,
 				2CB8C88B298131BF008A0090 /* Watch List */,
+				2CB8C8E029816A2E008A0090 /* TabBarVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -164,7 +175,11 @@
 		2CB8C889298131B9008A0090 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2CB8C8DA29814C92008A0090 /* HomeBuilder.swift */,
+				2CB8C8D829814C8C008A0090 /* HomeContracts.swift */,
+				2CB8C8DC29814CA6008A0090 /* HomeViewModel.swift */,
 				2CB8C883298131A0008A0090 /* HomeViewController.swift */,
+				2CB8C8DE2981607E008A0090 /* HomePresentation.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -310,8 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB8C8D929814C8C008A0090 /* HomeContracts.swift in Sources */,
+				2CB8C8DD29814CA6008A0090 /* HomeViewModel.swift in Sources */,
 				2CB8C8CA298142CA008A0090 /* Paths.swift in Sources */,
 				2CB8C88229813077008A0090 /* Constants.swift in Sources */,
+				2CB8C8DB29814C92008A0090 /* HomeBuilder.swift in Sources */,
 				2CB8C8D329814647008A0090 /* Movie.swift in Sources */,
 				2CB8C886298131AA008A0090 /* SearchViewController.swift in Sources */,
 				2CB8C888298131B5008A0090 /* WatchListViewController.swift in Sources */,
@@ -328,6 +346,8 @@
 				2CB8C8C429814221008A0090 /* NetworkError.swift in Sources */,
 				2CB8C884298131A0008A0090 /* HomeViewController.swift in Sources */,
 				2CB8C8CD29814418008A0090 /* MovieCategories.swift in Sources */,
+				2CB8C8DF2981607E008A0090 /* HomePresentation.swift in Sources */,
+				2CB8C8E129816A2E008A0090 /* TabBarVC.swift in Sources */,
 				2CB8C8CF2981442A008A0090 /* MovieEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
