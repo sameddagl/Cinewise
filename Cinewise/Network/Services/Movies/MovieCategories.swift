@@ -12,4 +12,5 @@ enum MovieCategories: String {
     case topRated = "Top Rated"
     case popular = "Popular"
     case upComing = "Upcoming"
+    case latest = "Latest"
 }

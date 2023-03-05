@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MovieServiceProtocol {
-    func fetchMovies(endPoint: MovieEndPoint, completion: @escaping (Result<MovieResult, NetworkError>) -> Void)
+    func fetchMovies(category: MovieCategories, page: Int, completion: @escaping (Result<MovieResult, NetworkError>) -> Void)
 }
 
 final class MovieService: MovieServiceProtocol {
@@ -18,9 +18,24 @@ final class MovieService: MovieServiceProtocol {
         self.service = service
     }
     
-    func fetchMovies(endPoint: MovieEndPoint, completion: @escaping (Result<MovieResult, NetworkError>) -> Void) {
-        service.fetch(endPoint: endPoint) { (result: Result<MovieResult, NetworkError>) in
-            completion(result)
+    func fetchMovies(category: MovieCategories, page: Int, completion: @escaping (Result<MovieResult, NetworkError>) -> Void) {
+        switch category {
+        case .nowPlaying:
+            service.fetch(endPoint: MovieEndPoint.getNowPlaying(page: page)) { result in
+                completion(result)
+            }
+        case .topRated:
+            service.fetch(endPoint: MovieEndPoint.getTopRated(page: page)) { result in
+                completion(result)
+            }
+        case .popular:
+            service.fetch(endPoint: MovieEndPoint.getPopular(page: page)) { result in
+                completion(result)
+            }
+        case .upComing:
+            service.fetch(endPoint: MovieEndPoint.getUpComing(page: page)) { result in
+                completion(result)
+            }
         }
     }
 }

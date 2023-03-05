@@ -17,20 +17,44 @@ final class HomeViewModel: HomeVMProtocol {
     }
     
     private var currentPage = 1
+    private var currentCategory: MovieCategories = .popular
     
     func load() {
+        let group = DispatchGroup()
+        var topRated = [HomePresentation]()
+        var selectedCategory = [HomePresentation]()
+        
+        group.enter()
+        
         notify(.startLoading)
-        movieService.fetchMovies(endPoint: .getPopular(page: currentPage)) { [weak self] result in
-            guard let self = self else { return }
-            self.notify(.endLoading)
+        movieService.fetchMovies(category: .topRated, page: currentPage) { result in
             switch result {
             case .success(let movieResult):
-                let moviesPresentation = movieResult.results.map{ HomePresentation(movie: $0) }
-                self.notify(.fetchedMovies(movies: moviesPresentation))
+                topRated = movieResult.results.map{ HomePresentation(movie: $0) }
+                group.leave()
             case .failure(let error):
                 print(error)
+                group.leave()
                 //TODO: Error handling
             }
+        }
+        
+        group.enter()
+        movieService.fetchMovies(category: currentCategory, page: currentPage) { result in
+            switch result {
+            case .success(let movieResult):
+                selectedCategory = movieResult.results.map{ HomePresentation(movie: $0) }
+                group.leave()
+            case .failure(let error):
+                print(error)
+                group.leave()
+                //TODO: Error handling
+            }
+        }
+        
+        group.notify(queue: .main) {
+            self.notify(.endLoading)
+            self.notify(.fetchedMovies(topRated: topRated, selectedCategory: selectedCategory))
         }
     }
     

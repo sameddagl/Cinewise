@@ -17,7 +17,7 @@ protocol HomeVMProtocol {
 enum HomeOutputs {
     case startLoading
     case endLoading
-    case fetchedMovies(movies: [HomePresentation])
+    case fetchedMovies(topRated: [HomePresentation], selectedCategory: [HomePresentation])
 }
 
 enum HomeRoute {

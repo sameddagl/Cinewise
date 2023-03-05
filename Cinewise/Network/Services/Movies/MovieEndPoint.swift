@@ -12,6 +12,7 @@ enum MovieEndPoint: HTTPEndpoint {
     case getTopRated(page: Int)
     case getPopular(page: Int)
     case getUpComing(page: Int)
+    case getLatest(page: Int)
     
     var path: String {
         switch self {
@@ -23,6 +24,8 @@ enum MovieEndPoint: HTTPEndpoint {
             return Paths.popular.rawValue
         case .getUpComing:
             return Paths.upComing.rawValue
+        case .getLatest:
+            return Paths.latest.rawValue
         }
     }
     
@@ -52,6 +55,13 @@ enum MovieEndPoint: HTTPEndpoint {
                 URLQueryItem(name: "language", value: "en-US"),
                 URLQueryItem(name: "page", value: String(page))
             ]
+        case .getLatest(let page):
+            return [
+                URLQueryItem(name: "api_key", value: NetworkHelper.apiKey),
+                URLQueryItem(name: "language", value: "en-US"),
+                URLQueryItem(name: "page", value: String(page))
+            ]
+
         }
     }
 }

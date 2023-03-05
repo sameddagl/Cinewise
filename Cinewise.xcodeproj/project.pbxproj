@@ -123,10 +123,10 @@
 		2CB8C878298129DE008A0090 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2CB8C8E029816A2E008A0090 /* TabBarVC.swift */,
 				2CB8C889298131B9008A0090 /* Home */,
 				2CB8C88A298131BC008A0090 /* Search */,
 				2CB8C88B298131BF008A0090 /* Watch List */,
-				2CB8C8E029816A2E008A0090 /* TabBarVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";

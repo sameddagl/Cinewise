@@ -12,4 +12,5 @@ enum Paths: String {
     case topRated = "/3/movie/top_rated"
     case popular = "/3/movie/popular"
     case upComing = "/3/movie/upcoming"
+    case latest = "/3/movie/latest"
 }
